@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <g transform="translate(5, 5)">
+    <!-- Mountain Background -->
+    <path d="M5 45 L22 18 L32 30 L45 10 L65 45 Z" fill="#2d6a4f" opacity="0.85"/>
+    <path d="M22 18 L32 30 L45 10 L54 24 L48 25 L40 18 L32 28 Z" fill="#e8f5e9" opacity="0.7"/>
+    <!-- Sun / Moon Behind Peak -->
+    <circle cx="34" cy="14" r="7" fill="#d4a373" opacity="0.9"/>
+    <!-- Pine Trees / Nature curves -->
+    <path d="M12 45 L17 37 L22 45 Z" fill="#1b4332"/>
+    <path d="M47 45 L52 35 L57 45 Z" fill="#1b4332"/>
+    <!-- Lake Water Waves -->
+    <path d="M6 46 Q 18 43, 30 46 T 54 46 T 66 46" stroke="#c59b27" stroke-width="2" stroke-linecap="round"/>
+    <path d="M10 49 Q 22 47, 34 49 T 58 49" stroke="#52b788" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <!-- Text Brand -->
+  <text x="78" y="27" font-family="'Cinzel', 'Playfair Display', serif" font-size="20" font-weight="700" fill="#1b4332" letter-spacing="1.5">MỘC SƠN</text>
+  <text x="79" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#c59b27" letter-spacing="3.5">ECO RESORT &amp; RETREAT</text>
+</svg>

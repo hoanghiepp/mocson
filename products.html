@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Khám phá các sản phẩm được tuyển chọn tại Mộc Market. Lọc theo danh mục, thương hiệu, giá và đánh giá.">
+  <title>Sản phẩm được tuyển chọn — Mộc Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/products.css">
+  <script defer src="js/products-page.js"></script>
+</head>
+<body>
+  <div class="announcement"><span>✳</span> Miễn phí giao hàng cho đơn từ 500.000đ <a href="#catalog">Mua sắm ngay ↗</a></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false"><span></span><span></span></button>
+      <a class="brand" href="index.html" aria-label="Mộc Market - Trang chủ"><span class="brand-mark">m.</span><span>mộc<small>market</small></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a><a class="active" href="products.html" aria-current="page">Sản phẩm</a><a href="products.html?category=Nhà%20cửa">Nhà cửa</a><a href="products.html?category=Thời%20trang">Phong cách</a>
+      </nav>
+      <form class="header-search" id="header-search" role="search"><button type="submit" aria-label="Tìm kiếm">⌕</button><input type="search" name="q" placeholder="Bạn đang tìm gì?" aria-label="Tìm kiếm sản phẩm"></form>
+      <a class="cart-link" href="cart.html" aria-label="Giỏ hàng"><span aria-hidden="true">♧</span><span class="cart-label">Giỏ hàng</span><b id="cart-count">0</b></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumbs"><a href="index.html">Trang chủ</a><span>/</span><span>Sản phẩm</span></div>
+    <section class="catalog-hero">
+      <div class="catalog-hero-copy"><span class="eyebrow"><i></i> TUYỂN CHỌN DÀNH CHO BẠN</span><h1>Món hay mỗi ngày,<br><em>chọn là thấy vui.</em></h1><p>Tìm những thiết kế tinh tế, chất lượng bền lâu và hợp với nhịp sống của bạn.</p></div>
+      <div class="hero-note"><span>01 — 08</span><span>món đồ được chọn<br>bằng sự tử tế</span><i>✳</i></div>
+      <div class="hero-decoration" aria-hidden="true"><span>✳</span><span>✦</span><span>m.</span></div>
+    </section>
+
+    <section class="shop-layout" id="catalog" aria-label="Danh mục sản phẩm">
+      <aside class="filter-panel" id="filter-panel">
+        <div class="filter-top"><div><span class="eyebrow">TÌM MÓN PHÙ HỢP</span><h2>Bộ lọc</h2></div><button type="button" class="clear-filters" id="clear-filters">Xóa tất cả</button></div>
+        <fieldset><legend>Danh mục</legend><div class="filter-list" id="category-options"></div></fieldset>
+        <fieldset><legend>Thương hiệu</legend><div class="filter-list" id="brand-options"></div></fieldset>
+        <fieldset><legend>Khoảng giá</legend>
+          <label class="price-preset"><input type="radio" name="price" value="all" checked><span>Tất cả mức giá</span></label>
+          <label class="price-preset"><input type="radio" name="price" value="under500"><span>Dưới 500.000đ</span></label>
+          <label class="price-preset"><input type="radio" name="price" value="500to1000"><span>500.000đ – 1.000.000đ</span></label>
+          <label class="price-preset"><input type="radio" name="price" value="over1000"><span>Trên 1.000.000đ</span></label>
+          <div class="price-custom"><label><span class="sr-only">Giá thấp nhất</span><input id="min-price" type="number" min="0" placeholder="Từ"></label><span>—</span><label><span class="sr-only">Giá cao nhất</span><input id="max-price" type="number" min="0" placeholder="Đến"></label></div>
+          <button class="apply-price" id="apply-price" type="button">Áp dụng giá</button>
+        </fieldset>
+        <div class="filter-promise"><span>♡</span><p><strong>Chọn lọc có tâm</strong><br>Mỗi món đều được Mộc tìm hiểu kỹ.</p></div>
+      </aside>
+
+      <div class="catalog-main">
+        <div class="catalog-heading">
+          <div><span class="eyebrow">BỘ SƯU TẬP CỦA MỘC</span><h2>Tất cả sản phẩm</h2></div>
+          <button class="mobile-filter-button" id="mobile-filter-button" type="button" aria-expanded="false">☷ <span>Bộ lọc</span></button>
+        </div>
+        <div class="catalog-tools">
+          <form class="catalog-search" id="catalog-search"><button type="submit" aria-label="Tìm kiếm">⌕</button><input id="search-input" type="search" placeholder="Tìm theo tên sản phẩm..." aria-label="Tìm theo tên sản phẩm"><kbd>↵</kbd></form>
+          <div class="toolbar-right"><span id="result-count" aria-live="polite"></span><label class="sort-control"><span>Sắp xếp:</span><select id="sort-products" aria-label="Sắp xếp sản phẩm"><option value="featured">Nổi bật</option><option value="price-asc">Giá: thấp đến cao</option><option value="price-desc">Giá: cao đến thấp</option><option value="rating">Đánh giá cao nhất</option><option value="name">Tên A – Z</option></select></label></div>
+        </div>
+        <div id="active-filters" class="active-filters" aria-live="polite"></div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><span>⌕</span><h2>Chưa tìm thấy món phù hợp</h2><p>Thử thay đổi từ khóa hoặc bỏ bớt bộ lọc nhé.</p><button class="button button-dark" id="reset-empty" type="button">Xóa bộ lọc</button></div>
+        <div class="catalog-end" id="catalog-end"><span>✳</span><p>Bạn đã xem hết những món Mộc tuyển chọn.</p><a href="index.html">Trở về trang chủ ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">m.</span><span>mộc<small>market</small></span></a><p>Chọn điều tốt đẹp. Tận hưởng những khoảnh khắc bình thường.</p><div><a href="mailto:xinchao@mocmarket.vn">Liên hệ với Mộc</a><span>© 2026 Mộc Market</span></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

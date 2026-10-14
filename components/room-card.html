@@ -1,0 +1,39 @@
+<!-- 
+  Component: Room Card (Thẻ hiển thị hạng phòng & biệt thự)
+  Mẫu cấu trúc HTML chuẩn để tái sử dụng hoặc mở rộng vào các trang con.
+-->
+<div class="room-card" data-category="{{category}}">
+  <div class="room-media">
+    <img src="{{image_url}}" alt="{{room_name}}" loading="lazy">
+    <span class="room-badge">{{tag}}</span>
+    <div class="room-price-tag">
+      <span class="room-price-val">{{price_formatted}}</span>
+      <span class="room-price-unit">/{{unit}}</span>
+    </div>
+  </div>
+  <div class="room-body">
+    <div class="room-category">{{category_name}}</div>
+    <h3 class="room-title">{{room_name}}</h3>
+    <div class="room-specs">
+      <div class="spec-item"><i class="fa-solid fa-maximize"></i> {{area}}</div>
+      <div class="spec-item"><i class="fa-solid fa-user-group"></i> {{capacity}}</div>
+      <div class="spec-item"><i class="fa-solid fa-bed"></i> {{bed}}</div>
+      <div class="spec-item"><i class="fa-solid fa-mountain-sun"></i> {{view}}</div>
+    </div>
+    <p class="room-desc">{{description}}</p>
+    <div class="room-amenities-tags">
+      <!-- Danh sách tiện ích -->
+      <span class="amenity-tag">Bể bơi riêng</span>
+      <span class="amenity-tag">Bồn tắm đá</span>
+      <span class="amenity-tag">Buffet sáng</span>
+    </div>
+    <div class="room-actions">
+      <button class="btn btn-outline-primary btn-sm btn-quick-view" data-id="{{room_id}}">
+        <i class="fa-solid fa-eye"></i> Chi tiết
+      </button>
+      <button class="btn btn-primary btn-sm btn-book-room" data-id="{{room_id}}">
+        <i class="fa-solid fa-calendar-check"></i> Đặt phòng
+      </button>
+    </div>
+  </div>
+</div>

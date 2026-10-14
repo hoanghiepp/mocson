@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Xem lại và cập nhật những sản phẩm bạn đã chọn tại Mộc Market.">
+  <title>Giỏ hàng — Mộc Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cart.css">
+  <script defer src="js/cart-page.js"></script>
+</head>
+<body>
+  <div class="announcement"><span>✳</span> Miễn phí giao hàng cho đơn từ 500.000đ <a href="products.html">Mua sắm ngay ↗</a></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false"><span></span><span></span></button>
+      <a class="brand" href="index.html" aria-label="Mộc Market - Trang chủ"><span class="brand-mark">m.</span><span>mộc<small>market</small></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a><a href="products.html">Sản phẩm</a><a href="products.html?category=Nhà%20cửa">Nhà cửa</a><a href="products.html?category=Thời%20trang">Phong cách</a>
+      </nav>
+      <a class="cart-link active" href="cart.html" aria-current="page" aria-label="Giỏ hàng"><span aria-hidden="true">♧</span><span class="cart-label">Giỏ hàng</span><b id="header-cart-count">0</b></a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="index.html">Trang chủ</a><span>/</span><span>Giỏ hàng</span></nav>
+    <section class="cart-page">
+      <div class="page-heading">
+        <div><span class="eyebrow"><i></i> ĐÃ CHỌN CHO BẠN</span><h1>Giỏ hàng <span id="cart-count"></span></h1><p>Một vài điều dễ thương đang chờ bạn ở đây.</p></div>
+        <a class="continue-link" href="products.html"><span>←</span> Tiếp tục mua sắm</a>
+      </div>
+      <div id="cart-content" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">m.</span><span>mộc<small>market</small></span></a><p>Chọn điều tốt đẹp. Tận hưởng những khoảnh khắc bình thường.</p><div><a href="mailto:xinchao@mocmarket.vn">Liên hệ với Mộc</a><span>© 2026 Mộc Market</span></div></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
